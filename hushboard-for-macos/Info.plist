@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Hides the app from the Dock and the Cmd-Tab switcher.
+         LSUIElement apps show only in the menu bar (accessory policy). -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- TCC prompt shown when the app first requests mic access via CoreAudio. -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Hushboard needs microphone access to mute and unmute your mic while you type.</string>
+
+    <!-- Accessibility is required for the CGEvent tap that detects keystrokes
+         system-wide. The user is guided through the grant flow during onboarding. -->
+    <key>NSAccessibilityUsageDescription</key>
+    <string>Hushboard needs Accessibility access to detect keystrokes while other apps are in focus.</string>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+
+    <!-- Prevents macOS from terminating the app when it idles — Hushboard must
+         stay alive continuously to monitor keyboard events. -->
+    <key>NSSupportsAutomaticTermination</key>
+    <false/>
+
+    <!-- Standard Xcode build-system substitution variables. -->
+    <key>CFBundleName</key>
+    <string>Hushboard</string>
+    <key>CFBundleDisplayName</key>
+    <string>Hushboard</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+</dict>
+</plist>
