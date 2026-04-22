@@ -128,10 +128,7 @@ class FloatingHUDController {
         })
 
         // ── Unmute delay submenu ─────────────────────────────────────────────
-        // 0.1–1.5 s in 0.1 s steps. We format each value to one decimal place
-        // before converting back to Double to avoid floating-point accumulation
-        // errors (e.g. stride producing 0.30000000000000004).
-        let delayOptions = stride(from: 0.1, through: 1.5, by: 0.1)
+        let delayOptions = stride(from: 0.1, through: 1.0, by: 0.1)
             .map { Double(String(format: "%.1f", $0))! }
         let delayMenu = NSMenu()
         for val in delayOptions {
