@@ -9,7 +9,7 @@ Hushboard runs silently in the menu bar and listens for keyboard activity. The m
 ## Features
 
 - **Automatic mute on typing:** uses a CoreGraphics event tap to detect keystrokes globally
-- **Configurable unmute delay:** 0.1 s to 1.5 s, so trailing keystrokes don't bleed through
+- **Configurable unmute delay:** 0.1 s to 1.0 s, so trailing keystrokes don't bleed through
 - **Floating HUD:** always-on-top circle button that stays visible even when the menu bar is hidden in fullscreen meetings; click it for a management menu
 - **Meeting-aware HUD visibility:** HUD appears only when a meeting app is running or a browser has a meeting tab active
 - **Browser meeting detection:** detects Google Meet, Zoom web, Teams, Webex, Jitsi, Whereby via window title and tab URL (Chrome, Firefox, Safari, Arc, Brave, Edge, Opera, Vivaldi)
@@ -26,7 +26,7 @@ Zoom, Microsoft Teams (classic + new), Google Meet, FaceTime, Cisco Webex, Slack
 
 ## Requirements
 
-- macOS 13.0 or later
+- macOS 14.0 or later
 - Xcode 15 or later (to build from source)
 - **Accessibility permission:** required for the global keyboard event tap
 
